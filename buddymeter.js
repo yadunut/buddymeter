@@ -22,6 +22,9 @@ function getAnswerV2() {
     })
 }
 
+// This function solves buddymeter
+// Copy and paste from start to end and run getAnswerV3() after entering your username
+// Start
 counter = 0
 function getAnswerV3() {
     name = 'option_' + questionArray[question_number].answer
@@ -30,10 +33,10 @@ function getAnswerV3() {
         counter += 1
         console.log(counter)
         if (counter >= 2) {
-            console.log("This called")
             counter = 0
             name = 'option_' + questionArray[question_number].answer
             document.getElementById(name).click()
         }
     })
 }
+// End
